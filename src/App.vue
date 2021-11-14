@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <Form />
+  <div id="app" class="container p-5">
+    <div class="row justify-content-center">
+      <Form class="col-8" />
+    </div>
   </div>
 </template>
 
@@ -16,21 +18,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  background-color: #fafafa;
-  padding: 24px;
-  box-sizing: border-box;
-}
-
-html,
-body,
-#app {
-  height: 100%;
-}
+@import "~normalize.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  background-color: #fafafa;
 }
 </style>
